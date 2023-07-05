@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\V1\TrackerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[TrackerController::class, 'dailySensorCounts']);
+Route::get('/charlie',[TrackerController::class, 'geoFencingTrackers']);

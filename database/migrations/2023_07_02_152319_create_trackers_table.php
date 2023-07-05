@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('trackers', function (Blueprint $table) {
             $table->id();
             $table->string('tracker_id')->nullable();
+            $table->string('frame_id')->nullable();
             $table->dateTime('timestamp')->nullable();
             $table->string('model')->nullable();
             $table->float('latitude')->nullable();
