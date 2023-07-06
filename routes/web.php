@@ -14,5 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[TrackerController::class, 'dailySensorCounts']);
-Route::get('/charlie',[TrackerController::class, 'geoFencingTrackers']);
+
